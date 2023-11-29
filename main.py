@@ -79,6 +79,7 @@ if __name__ == "__main__":
             plot_para=plot_para,
         )
         plot_driver.figure.show()
+        print ("end")
     else:
         CAnimateDriver(
             chan,
