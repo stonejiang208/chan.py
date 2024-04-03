@@ -5,6 +5,7 @@ from typing import Literal
 class DATA_SRC(Enum):
     BAO_STOCK = auto()
     CCXT = auto()
+    CSV = auto()
 
 
 class KL_TYPE(Enum):
@@ -115,11 +116,13 @@ class MACD_ALGO(Enum):
 
 
 class DATA_FIELD:
+    FIELD_TS = "timestamp"
+    FIELD_ID = "#"
     FIELD_TIME = "time_key"
     FIELD_OPEN = "open"
     FIELD_HIGH = "high"
     FIELD_LOW = "low"
-    FIELD_CLOSE = "close"
+    FIELD_CLOSE = "last"
     FIELD_VOLUME = "volume"  # 成交量
     FIELD_TURNOVER = "turnover"  # 成交额
     FIELD_TURNRATE = "turnover_rate"  # 换手率

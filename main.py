@@ -5,10 +5,10 @@ from Plot.AnimatePlotDriver import CAnimateDriver
 from Plot.PlotDriver import CPlotDriver
 
 if __name__ == "__main__":
-    code = "sz.000001"
-    begin_time = "2018-01-01"
+    code = "2021-01-01_2023-11-28ethusdt_1d"
+    begin_time = "2021-06-01"
     end_time = None
-    data_src = DATA_SRC.BAO_STOCK
+    data_src = DATA_SRC.CSV
     lv_list = [KL_TYPE.K_DAY]
 
     config = CChanConfig({
@@ -46,14 +46,14 @@ if __name__ == "__main__":
 
     plot_para = {
         "seg": {
-            # "plot_trendline": True,
+            #"plot_trendline": True,
         },
         "bi": {
-            # "show_num": True,
-            # "disp_end": True,
+            #"show_num": True,
+            #"disp_end": True,
         },
         "figure": {
-            "x_range": 200,
+            "x_range": 2050,
         },
         "marker": {
             # "markers": {  # text, position, color
